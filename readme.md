@@ -1,5 +1,5 @@
 # Node.js Web Application - Part 3
-This is a continuation from [this guide](https://github.com/JasLinnie/portfolio/blob/master/Readme-2.md). We will be further modifying the app to allow integration of the app to a HubSpot portal via OAuth. Make sure you have a [HubSpot developer portal](https://developers.hubspot.com/) before you start on this.
+This is a continuation from [this guide](https://github.com/JasLinnie/nano-stack-training-2). We will be further modifying the app to allow integration of the app to a HubSpot portal via OAuth. Make sure you have a [HubSpot developer portal](https://developers.hubspot.com/) before you start on this.
 
 In this guide, we will be achieving these 2 items:
 1. Configure HubSpot OAuth logic into the app
