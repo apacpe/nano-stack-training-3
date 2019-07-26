@@ -1,0 +1,62 @@
+<html>
+ <body>
+  <h1>Search for contacts in HubSpot</h1>
+	 <div class="contactsearch">
+	  <form action="/admin" method="post">
+		 <input type="text" name="searchinput">
+		 <input type="submit" name="search" value="Search for contact">
+		</form>
+	 </div>
+   <div>
+	  <% if (contactsdata!='') { %>
+		 <table class="formresults" align="center">
+		  <tr>
+			 <th>Vid</th>
+			 <th>First Name</th>
+			 <th>Email</th>
+			 <th>Lifecycle Stage</th>
+			 <th>HubSpot Owner</th>
+			 <th>Contact URL</th>
+			</tr>
+      
+			<% for (var i=0; i<contactsdata.length; i++) { %>
+			<tr>
+			 <td>
+			  <% if (typeof contactsdata[i].vid!='undefined') { %>
+			   <%= contactsdata[i].vid %>
+		          <% } %>
+			 </td>
+			 <td>
+			  <% if (typeof contactsdata[i].properties.firstname!='undefined') { %>
+			   <%= contactsdata[i].properties.firstname.value %>
+			  <% } %>
+			 </td>
+			 <td>
+			  <% if (typeof contactsdata[i].properties.email!='undefined') { %>
+			   <%= contactsdata[i].properties.email.value %>
+			  <% } %>
+			 </td>
+			 <td>
+			  <% if (typeof contactsdata[i].properties.lifecyclestage!='undefined') { %>
+			   <%= contactsdata[i].properties.lifecyclestage.value %>
+			  <% } %>
+			 </td>
+			 <td>
+			  <% if (typeof contactsdata[i].properties.hubspot_owner_id!='undefined') { %>
+			   <%= contactsdata[i].properties.hubspot_owner_id.value %>
+			  <% } %>
+			 </td>
+			 <td>
+			  <% if (typeof contactsdata[i]["profile-url"]!='undefined') { %>
+			   <a target="_blank" href="<%= contactsdata[i]["profile-url"] %>">Link to contact</a>
+			  <% } %>
+			 </td>
+			</tr>
+		       <% } %>
+		</table>
+	<% } else { %>
+	 <p>No results</p>
+	<% } %>
+   </div>
+ </body>
+</html>
