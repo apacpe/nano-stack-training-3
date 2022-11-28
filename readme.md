@@ -6,20 +6,22 @@ In this guide, we will be achieving these 2 items:
 2. Incorporate [HubSpot contacts search API](https://developers.hubspot.com/docs/methods/contacts/search_contacts) and use OAuth access token as authentication for the request
 
 ### Install node modules
-Install these node packages:
+Navigate to your portfolio-app folder and install these node packages:
 1. `npm install node-cache`
 2. `npm install express-session`
 3. `npm install request`
 4. `npm install request-promise-native`
 
-### Create a `.env` file in the root of your project directory with your developer portal app's client ID and client secret
-1. Create a `.env` file using `touch .env`
-2. Insert the client ID, secret and scope in the file in this format:
+### Add environment variables to your Cyclic app
+1. Navigate to your app settings in Cyclic
+2. Click on the "Variables" tab > "Key-Value Editor"
+3. Insert the client ID, client secret and scope in Cyclic in this format:
 ```
 CLIENT_ID='xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx'
 CLIENT_SECRET='yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy'
-SCOPE='crm.objects.contacts.write,forms'
+SCOPE='crm.objects.contacts.read,crm.objects.contacts.write'
 ```
+Note: The scopes you add here **must match the scopes you have configured in your developer app**. If the scopes do not match exactly, the install url will throw an error when you try to install your app.
 
 ### Set up required node modules and variables
 Add the following codes to the top of your app.js file:
