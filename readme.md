@@ -321,4 +321,4 @@ res.redirect('/admin');
 const REDIRECT_URI = `https://tan-magnificent-slug.cyclic.app/oauth-callback`;
 ```
 2. Commit all of the changes to your local git repository using `git add .` and `git commit -m "update"`
-3. Push changes to Cyclic using `git push origin master`
+3. Push changes to Cyclic using `git push origin main`
