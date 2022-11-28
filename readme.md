@@ -11,6 +11,7 @@ Navigate to your portfolio-app folder and install these node packages:
 2. `npm install express-session`
 3. `npm install request`
 4. `npm install request-promise-native`
+5. `npm install dotenv`
 
 ### Create a `.env` file in the root of your project directory with your developer portal app's client ID and client secret
 1. Create a `.env` file using `touch .env`
