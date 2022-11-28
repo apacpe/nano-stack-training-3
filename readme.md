@@ -18,7 +18,7 @@ Install these node packages:
 ```
 CLIENT_ID='xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx'
 CLIENT_SECRET='yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy'
-SCOPE='contacts,forms'
+SCOPE='crm.objects.contacts.write,forms'
 ```
 
 ### Set up required node modules and variables
