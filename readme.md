@@ -21,7 +21,7 @@ CLIENT_ID='xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx'
 CLIENT_SECRET='yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy'
 SCOPE='crm.objects.contacts.read,crm.objects.contacts.write'
 ```
-Note: The scopes you add here **must match the scopes you have configured in your developer app**. If the scopes do not match exactly, the install url will throw an error when you try to install your app.
+Note: The scopes you add here **must match the scopes you have configured in your developer app exactly**. If the scopes do not match exactly, the install url will throw an error when you try to install your app.
 
 ### Set up required node modules and variables
 Add the following codes to the top of your app.js file:
