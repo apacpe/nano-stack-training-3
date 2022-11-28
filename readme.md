@@ -12,6 +12,15 @@ Navigate to your portfolio-app folder and install these node packages:
 3. `npm install request`
 4. `npm install request-promise-native`
 
+### Create a `.env` file in the root of your project directory with your developer portal app's client ID and client secret
+1. Create a `.env` file using `touch .env`
+2. Insert the client ID, secret and scope in the file in this format:
+```
+CLIENT_ID='xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx'
+CLIENT_SECRET='yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy'
+SCOPE='crm.objects.contacts.read,crm.objects.contacts.write'
+```
+
 ### Add environment variables to your Cyclic app
 1. Navigate to your app settings in Cyclic
 2. Click on the "Variables" tab > "Key-Value Editor"
