@@ -303,11 +303,11 @@ res.redirect('/admin');
 2. After completing OAuth flow, you should be redirected to /admin page where it should display the search input bar
 3. Try making a search by submitting a query in the search input bar, the page should render searchresults.ejs template and display the search results in a table
 
-### Push changes to Heroku 
-1. Before pushing changes to Heroku, change the redirect_uri variable to your Heroku app's domain:
+### Push changes to Cyclic 
+1. Before pushing changes to Cyclic, change the redirect_uri variable to your Cyclic app's domain:
 ```
 // const REDIRECT_URI = `http://localhost:${port}/oauth-callback`;
-const REDIRECT_URI = `https://serene-reaches-92431.herokuapp.com/oauth-callback`;
+const REDIRECT_URI = `https://tan-magnificent-slug.cyclic.app/oauth-callback`;
 ```
 2. Commit all of the changes to your local git repository using `git add .` and `git commit -m "update"`
 3. Push changes to Heroku using `git push heroku master`
