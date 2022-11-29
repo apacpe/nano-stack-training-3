@@ -36,6 +36,7 @@ Note: The scopes you add here **must match the scopes you have configured in you
 ### Set up required node modules and variables
 Add the following codes to the top of your app.js file:
 ```
+require('dotenv').config();
 const request = require('request-promise-native');
 const NodeCache = require('node-cache');
 const session = require('express-session');
